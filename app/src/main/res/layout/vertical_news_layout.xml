@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="450dp"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:cardCornerRadius="5dp"
+    android:layout_marginEnd="25dp"
+    android:layout_marginStart="15dp"
+    android:layout_marginTop="25dp"
+    app:cardElevation="8dp">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/news_image"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="60dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/roundedImageView"
+        tools:src="@mipmap/ic_launcher" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/news_title"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Headline"
+        app:autoSizeMaxTextSize="26sp"
+        app:autoSizeMinTextSize="18sp"
+        android:lines="4"
+        app:autoSizeStepGranularity="1sp"
+        app:autoSizeTextType="uniform"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/news_description"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:lines="6"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/news_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:autoSizeMaxTextSize="26sp"
+        app:autoSizeMinTextSize="12sp"
+        app:autoSizeStepGranularity="1sp"
+        app:autoSizeTextType="uniform"
+        tools:text="Former President Donald Trump's Department of Homeland Security delayed and altered an intelligence report related to Russian interference in the 2020 election, making changes that \appear to be based in part on political considerations,\"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/news_author"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="25dp"
+        android:paddingTop="12dp"
+        android:lines="3"
+        app:autoSizeMaxTextSize="22sp"
+        app:autoSizeMinTextSize="12sp"
+        app:autoSizeStepGranularity="2sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/news_description"
+        tools:text="Esha Mitra, Rhea Mogul" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/news_date"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        app:autoSizeMaxTextSize="22sp"
+        app:autoSizeMinTextSize="11sp"
+        app:autoSizeStepGranularity="2sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/news_image"
+        tools:text="2022-05-04T04:04:19Z"
+
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

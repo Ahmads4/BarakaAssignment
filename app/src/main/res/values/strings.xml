@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Baraka Assignment</string>
+    <string name="header_text">Insights</string>
+    <string name="headlines_title">Headlines</string>
+    <string name="news_text">News</string>
+    <string name="usd_text">USD</string>
+</resources>
